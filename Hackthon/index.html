@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marktlice - Productos en Oferta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Marktlice" class="logo-img">
+        </div>
+        <h1 class="title">MarktLice</h1>
+    </header>
+
+    <div class="container">
+        <h2>Productos en Oferta</h2>
+        <div id="productList" class="items-grid">
+            <!-- Aquí se generarán los productos dinámicamente -->
+        </div>
+        <div id="message" class="message"></div>
+
+        <!-- Botón para ir a la página de publicación -->
+        <button class="navigate-button" onclick="window.location.href='publish.html'">Publicar un Producto</button>
+    </div>
+
+    <!-- Modal emergente -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>¡Gracias por su compra! Su producto estará en su inventario en breve.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

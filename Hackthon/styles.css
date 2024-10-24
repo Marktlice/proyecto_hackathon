@@ -1,0 +1,182 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #282c34;
+    padding: 15px 40px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+ margin: 0%;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    display: flex;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grid de productos */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Se ajusta dinámicamente */
+    gap: 20px;
+    justify-content: center; /* Asegura que las columnas estén centradas */
+    max-width: 1000px; /* Ancho máximo para la cuadrícula */
+    margin: 0 auto; /* Asegura que todo esté centrado dentro de la página */
+}
+
+.item-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.item-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.item-card p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.item-card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.item-card button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos del modal emergente */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija en pantalla */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo de la ventana */
+    height: 100%; /* Altura completa de la ventana */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+    width: 300px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.navigate-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.navigate-button:hover {
+    background-color: #0056b3;
+}

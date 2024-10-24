@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Productos - Marktlice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Marktlice" class="logo-img">
+        </div>
+        <h1 class="title">Publicar Productos</h1>
+    </header>
+
+    <div class="container">
+        <h2>Publicar un Nuevo Producto</h2>
+        <form id="productForm">
+            <label for="productName">Nombre del Producto:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productPrice">Precio del Producto (NEAR):</label>
+            <input type="number" id="productPrice" name="productPrice" min="0" step="0.01" required>
+
+            <button type="submit">Publicar Producto</button>
+        </form>
+
+        <!-- Botón para ir a la página de ventas -->
+        <button class="navigate-button" onclick="window.location.href='index.html'">Ir a la Tienda</button>
+    </div>
+
+    <script src="publish.js"></script>
+</body>
+</html>
